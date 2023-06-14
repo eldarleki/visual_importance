@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visual Importance Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Visual Importance Predictor</h1>
+        <p class="description">Upload an image and let our AI model predict the visual importance in graphic design.</p>
+        <div class="drop-zone" id="dropZone">
+            <span class="drop-zone-text">Drag and drop a file here or click to select from your computer</span>
+        </div>
+        <input type="file" class="file-input" id="fileInput" accept="image/*">
+        <button class="button" onclick="selectImage()">Select image</button>
+        <div class="overlay" id="overlay">
+            <div class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="" alt="Predicted Attention Areas" id="attentionImage">
+            </div>
+        </div>
+        <p class="footer">© 2023 Visual Importance Predictor. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
